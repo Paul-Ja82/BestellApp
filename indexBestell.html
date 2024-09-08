@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestell App</title>
+    <link rel="icon" type="image/x-icon" href="imgEcc/Favicon/favicon-32x32.png">
+    <script src="/scripts/db.js" defer></script>
+    <script src="/scripts/template.js" defer></script>
+    <script src="/scripts/cart.js" defer></script>
+    <script src="/scripts/mainScript.js" defer></script>
+    <link rel="stylesheet" href="/styles/mainStyle.css">
+    <link rel="stylesheet" href="/styles/buttons.css">
+    <link rel="stylesheet" href="/styles/cartStyle.css">
+    <link rel="stylesheet" href="/styles/img.css">
+    <link rel="stylesheet" href="/styles/mediaQ.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<header>
+    <div class="logoDiv"><img class="logo" src="imgEcc/Logo.png"></div>
+
+    <nav class="navbar">
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+</header>
+<body onload="show()">
+    
+ <div class="mainDiv">
+    <div class="mainDivRight" id="mainDiv-Right"> 
+     <div class="pizzaImgdiv"> <img class="pizzaImg" src="imgEcc/pizzaImg.jpg"> </div>  
+     <div class="menuDiv"> 
+     <h1>PAUL`S KÜCHE</h1>
+        <div class="foodList" id="foodList"></div>
+    </div>
+    </div>
+    <div class="cart" id="cart">
+         <div class="cartheader">
+            <h2>Warenkorb</h2>
+        </div>
+        <div class="cartItems" id="cartItems"></div>
+        <div class="deliveryOptions" id="deliveryOptions">
+            <button class="deliveryButton" id="deliveryButton" onclick="selectOption('delivery')">Lieferung<br>+ 5 €</button>
+            <button class="deliveryButton" id="pickupButton" onclick="selectOption('pickup')">Abholung<br>+ 0 €</button>
+           </div>
+        <div class="cartTotal" id="cartTotal"></div>
+        <button id="orderButton" class="orderButton" onclick="Order()">Bestellen</button>
+    </div>
+    
+ </div>
+
+ <button class="smallCartButton" id="smallCartButton" onclick="toggleCart()">
+    <span  class="smallCart-icon" id="smallCartIcon">Warenkorb anzeigen🛒 </span> 
+    <span class="smallCart-count" id="smallCartCount" >0</span> 
+    <span class="smallCart-total" id="smallCartTotal" >0.00 €</span>
+    
+</button>
+
+
+ <div id="alert" class="modal">
+    <div class="modal-content">
+      <img class="logoModal" src="imgEcc/Logo.png">
+      <span class="closeButton" onclick="closeAlert()">&times;</span>
+      <p id="alertMessage">Bitte wählen Sie eine Lieferoption aus, bevor Sie die Bestellung aufgeben.</p>
+      <button class="allertButton" onclick="closeAlert()">OK</button>
+    </div>
+  </div>
+</body>
+<footer><img class="logoFooter" src="imgEcc/Logo.png"></footer>
+</html>

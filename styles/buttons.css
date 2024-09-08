@@ -1,0 +1,86 @@
+.amountButton {
+    font-size: 24px;
+    font-weight: bolder;
+    width: 28px;
+    height: 28px;
+    color: orange;
+    border: rgb(86, 86, 86);
+    cursor: pointer;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.delateButton {
+    border: none;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.deliveryButton {
+    border: none;
+    border: rgb(86, 86, 86);
+    cursor: pointer;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+    width: 44%;
+    height: 40px;
+    color: orange;
+    margin-right: 4%;
+    transition: background-color 0.3s ease;
+}
+
+.orderButton {
+    display: none;
+    border: none;
+    border: rgb(86, 86, 86);
+    cursor: pointer;
+    color: orange;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 24px;
+    margin-left: 8%;
+    width: 85%;
+    height: 40px;
+    font-weight: bold;
+}
+
+.allertButton {
+    border: none;
+    border: rgb(86, 86, 86);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: orange;
+    padding: 10px 20px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.smallCartButton {
+    display: none;
+    position: fixed;
+    width: 248px;
+    height: 70px;
+    bottom: 20px;
+    left: 10%;
+    border: solid whitesmoke;
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    padding: 0 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.closeButton {
+    border: none;
+    border: rgb(86, 86, 86);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: orange;
+    float: right;
+    width: 28px;
+    height: 28px;
+    font-size: 28px;
+    font-weight: bold;
+}
