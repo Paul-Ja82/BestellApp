@@ -69,6 +69,12 @@
     .pizzaImg {
         height: 200px;
     }
+
+    footer {
+        height: 150px;
+    
+    }
+    
 }
 
 @media (max-width: 400px) {
